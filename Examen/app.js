@@ -3,7 +3,7 @@ const btncalculate = document.getElementById("calculate");
 const note1 = document.getElementById("Note1");
 const note2 = document.getElementById("Note2");
 const note3 = document.getElementById("Note3");
-const btnaverage = document.getElementById("average");
+const txtaverage = document.getElementById("average");
 
 btncalculate.addEventListener("click",(event) => {
     let nameUser = inputName.value;
@@ -16,16 +16,16 @@ btncalculate.addEventListener("click",(event) => {
     let average = (((parseFloat(NoteOne+percentage1)+parseFloat(NoteTwo+percentage2)+parseFloat(NoteThree+percentage3))/3));
     let totallyaverage = average.toFixed(2);
     if(totallyaverage >= 4.5){
-        btnaverage.textContent = `${nameUser} según sus notas, su promedio es EXCELENTE y es de: ${totallyaverage} , ganó la materia`;
+        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es EXCELENTE y es de: ${totallyaverage} , ganó la materia`;
     }
     else if(totallyaverage >= 3.5 && totallyaverage <= 4.5){
-        btnaverage.textContent = `${nameUser} según sus notas, su promedio es BUENO y es de: ${totallyaverage} , ganó la materia`;
+        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es BUENO y es de: ${totallyaverage} , ganó la materia`;
     }
     else if(totallyaverage >= 2.5 && totallyaverage <= 3.4){
-        btnaverage.textContent = `${nameUser} según sus notas, su promedio es REGULAR y es de: ${totallyaverage} , perdió la materia, pero cuenta con la oportunidad de recuperarla`;
+        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es REGULAR y es de: ${totallyaverage} , perdió la materia, pero cuenta con la oportunidad de recuperarla`;
     }
     else if(totallyaverage <= 2){
-        btnaverage.textContent = `${nameUser} según sus notas, su promedio es MALO y es de: ${totallyaverage} , perdió la materia, debe repetirla`;
+        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es MALO y es de: ${totallyaverage} , perdió la materia, debe repetirla`;
     }
     });
 
