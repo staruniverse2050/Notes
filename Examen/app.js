@@ -26,5 +26,5 @@ btncalculate.addEventListener("click",(event) => {
     }
     else if(totallyaverage <= 2){
         btnaverage.textContent = `${nameUser} según sus notas, su promedio es MALO y es de: ${totallyaverage} , perdió la materia, debe repetirla`;
-    
+    }
     });
