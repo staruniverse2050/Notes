@@ -14,7 +14,7 @@ btncalculate.addEventListener("click",(event) => {
     let percentage2 = NoteTwo*30/100;
     let percentage3 = NoteThree*40/100;
     let average = (((parseFloat(NoteOne+percentage1)+parseFloat(NoteTwo+percentage2)+parseFloat(NoteThree+percentage3))/3));
-    let totallyaverage = average.toFixed(1);
+    let totallyaverage = average.toFixed(2);
     if(totallyaverage >= 4.5){
         btnaverage.textContent = `${nameUser} según sus notas, su promedio es EXCELENTE y es de: ${totallyaverage} , ganó la materia`;
     }
@@ -28,3 +28,4 @@ btncalculate.addEventListener("click",(event) => {
         btnaverage.textContent = `${nameUser} según sus notas, su promedio es MALO y es de: ${totallyaverage} , perdió la materia, debe repetirla`;
     }
     });
+
