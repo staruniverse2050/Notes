@@ -16,16 +16,16 @@ btncalculate.addEventListener("click",(event) => {
     let average = (((parseFloat(NoteOne+percentage1)+parseFloat(NoteTwo+percentage2)+parseFloat(NoteThree+percentage3))/3));
     let totallyaverage = average.toFixed(2);
     if(totallyaverage >= 4.5){
-        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es EXCELENTE y es de: ${totallyaverage} , ganó la materia`;
+        txtaverage.textContent = `${nameUser} según sus notas, su promedio es EXCELENTE y es de: ${totallyaverage} , ganó la materia`;
     }
     else if(totallyaverage >= 3.5 && totallyaverage <= 4.5){
-        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es BUENO y es de: ${totallyaverage} , ganó la materia`;
+        txtaverage.textContent = `${nameUser} según sus notas, su promedio es BUENO y es de: ${totallyaverage} , ganó la materia`;
     }
     else if(totallyaverage >= 2.5 && totallyaverage <= 3.4){
-        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es REGULAR y es de: ${totallyaverage} , perdió la materia, pero cuenta con la oportunidad de recuperarla`;
+        txtaverage.textContent = `${nameUser} según sus notas, su promedio es REGULAR y es de: ${totallyaverage} , perdió la materia, pero cuenta con la oportunidad de recuperarla`;
     }
     else if(totallyaverage <= 2){
-        txtbtnaverage.textContent = `${nameUser} según sus notas, su promedio es MALO y es de: ${totallyaverage} , perdió la materia, debe repetirla`;
+        txtaverage.textContent = `${nameUser} según sus notas, su promedio es MALO y es de: ${totallyaverage} , perdió la materia, debe repetirla`;
     }
     });
 
